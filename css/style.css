@@ -1,0 +1,28 @@
+.char_img {
+    height: 500px;
+    width: 360px;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+header {
+    height: 800px;
+    background: #000000 url(https://images.amcnetworks.com/amc.com/wp-content/uploads/2012/06/BB_S5B_004_L.jpg) 50% 100% no-repeat;
+}
