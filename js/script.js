@@ -14,15 +14,17 @@ $(document).ready(function(){
 		$(".filtro").show().not(":contains('" + filtro + "')").hide();
 	});
 
+	//Buscado dados da API
 	$.ajax({
 		url: "https://www.breakingbadapi.com/api/characters",
 		type: "GET",
 		beforeSend: function( xhr ) {
-			$("#app").append('Loading...');
+			$("#app").append('<h5>Loading...</h5>');
 		}
 	})
 	.done(function( dados ) {
 		$("#app").html('');
+		// Varrendo dados retornados da API e montando modal dos personagens fazendo append nos htmls
 		dados.forEach(dado => {
 			$("#app").append(`
 			<div class="col-md-6 col-lg-4 filtro">
@@ -62,14 +64,13 @@ $(document).ready(function(){
 							<div class="divider-custom-line"></div>
 						  </div>
 						  <!-- Personagem Modal - Image -->
-						  <img class="img-fluid rounded mb-5 char_img" src="${dado.img}" alt="">
+						  <img class="img-fluid rounded mb-5 char_img" src="${dado.img}" alt="${dado.name}">
 						  <!-- Personagem Modal - Text -->
 						  <p class="mb-5 text-justify" style="padding-left: 60px"><b>Nome: </b>${dado.name}<br>
 										  <b>Anivers&aacute;rio: </b>${dado.birthday}<br>
 										  <b>Ocupa&ccedil;&atilde;o: </b>${dado.occupation.join(', ')}<br>
 										  <b>Temporadas: </b>${dado.appearance.join(', ')}<br>
-										  <b>Status: </b>${dado.status}
-						  </p>
+										  <b>Status: </b>${dado.status}</p>
 						  <button class="btn btn-primary" href="#" data-dismiss="modal">
 							<i class="fas fa-times fa-fw"></i>
 							Fechar
