@@ -3,6 +3,7 @@
 Este é um site simples que apresenta a listagem dos personagens do Breaking Bad e seus respectivos detalhes, buscando dinamicamente da API https://www.breakingbadapi.com/
 
 Requisitos:
+ - Git
  - Internet
  - Bibliotecas de javascript e folhas de estilo já estão na aplicação
  
