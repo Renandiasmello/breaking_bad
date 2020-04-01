@@ -1,11 +1,9 @@
-describe("BuscaDadoApi", function() {
+// Teste automatizado de retorno da API
+describe("Busca dados api", function() {
 
-  it("deve poder listar os dados de personagens", function() {
-    let busca = new BuscaDadoApi();
-    let dados = busca.buscaDados();    
-
-    expect(dados);
-    
+  it("deve listar os dados de personagens", function() {
+    var busca = new BuscaDadoApi();
+    expect(busca.buscaDados()).toEqual("success");
   });
 
 });

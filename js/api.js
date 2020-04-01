@@ -1,3 +1,6 @@
+let busca = new BuscaDadoApi();
+busca.buscaDados();
+
 function BuscaDadoApi(){
 	var classe = {
 		buscaDados : function(){
@@ -12,6 +15,7 @@ function BuscaDadoApi(){
 			})
 			.done(function( dados ) {
 				$("#app").html('');
+				
 				// Varrendo dados retornados da API e montando modal dos personagens fazendo append nos htmls
 				dados.forEach(dado => {
 					$("#app").append(`
@@ -71,15 +75,13 @@ function BuscaDadoApi(){
 					  </div>
 					</div>`);
 				});
+
 			})
 			.fail(function () { return "error" });
-			
+
 			return "success";
 		}
 	}
 
 	return classe;
 }
-
-let busca = new BuscaDadoApi();
-busca.buscaDados();

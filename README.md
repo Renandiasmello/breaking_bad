@@ -7,7 +7,10 @@ Requisitos:
  - Internet
  - Bibliotecas de javascript e folhas de estilo já estão na aplicação
  
-Para executar a aplicação você precisa:
+Para executar a Aplicação, você precisa:
  - Abrir o console, ir até o diretório desejado e digitar git clone git@github.com:Renandiasmello/zenvia.git
- - Poderá colocar em um servidor (http://yourserver/zenvia/) ou executar a aplicação diretamente no index.html abrindo com um navegador
+ - Poderá colocar em um servidor (http://seuservidor/zenvia/) ou executar a aplicação diretamente no index.html abrindo com um navegador
+
+Para executar o Teste Automatizado(Jasmine), você precisa:
+ - Acessar http://seuservidor/zenvia/jasmine
  
