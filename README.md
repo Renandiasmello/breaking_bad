@@ -8,9 +8,9 @@ Requisitos:
  - Bibliotecas de javascript e folhas de estilo já estão na aplicação
  
 Para executar a Aplicação, você precisa:
- - Abrir o console, ir até o diretório desejado e digitar git clone git@github.com:Renandiasmello/zenvia.git
- - Poderá colocar em um servidor (http://seuservidor/zenvia/) ou executar a aplicação diretamente no index.html abrindo com um navegador
+ - Abrir o console, ir até o diretório desejado e digitar git clone git@github.com:Renandiasmello/breaking_bad.git
+ - Poderá colocar em um servidor (http://seuservidor/breaking_bad/) ou executar a aplicação diretamente no index.html abrindo com um navegador
 
 Para executar o Teste Automatizado(Jasmine), você precisa:
- - Acessar http://seuservidor/zenvia/jasmine
+ - Acessar http://seuservidor/breaking_bad/jasmine
  
