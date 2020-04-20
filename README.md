@@ -1,4 +1,4 @@
-# Zenvia
+# Breaking Bad
 
 Este é um site simples que apresenta a listagem dos personagens do Breaking Bad e seus respectivos detalhes, buscando dinamicamente da API https://www.breakingbadapi.com/
 
